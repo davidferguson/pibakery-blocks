@@ -1,0 +1,13 @@
+{
+	"name": "changepass",
+	"text": "Set user password to %1",
+	"script": "changepass.py",
+	"args": [
+		{
+			"type": "field",
+			"default": "raspberry"
+		}
+	],
+	"reboot": false,
+	"type": "setting"
+}
