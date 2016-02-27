@@ -12,6 +12,6 @@
 			"default": "network-password"
 		}
 	],
-	"reboot": true,
+	"reboot": false,
 	"type": "network"
 }
