@@ -1,0 +1,13 @@
+{
+	"name": "deletefile",
+	"text": "Delete file/folder %1",
+	"script": "rm -r",
+	"args": [
+		{
+			"type": "field",
+			"default": "/home/pi/Documents"
+		}
+	],
+	"reboot": false,
+	"type": "setting"
+}
