@@ -1,0 +1,8 @@
+{
+	"name": "shutdown",
+	"text": "Shutdown",
+	"script": "shutdown -h now",
+	"args": [],
+	"reboot": false,
+	"type": "other"
+}
