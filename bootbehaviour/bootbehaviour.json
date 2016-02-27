@@ -1,0 +1,13 @@
+{
+	"name": "bootbehaviour",
+	"text": "Boot to %1",
+	"script": "bootbehaviour.sh",
+	"args": [
+		{
+			"type": "menu",
+			"options": ["Console", "Console logged in", "Desktop", "Desktop logged in"]
+		}
+	],
+	"reboot": true,
+	"type": "network"
+}
