@@ -15,5 +15,5 @@ wifiText.replace("WIFI-SSID", wifiSSID).replace("WIFI-PSK", wifiPSK)
 with open("/etc/wpa_supplicant/wpa_supplicant.conf", "a") as wifiFile:
 	wifiFile.write(wifiText)
 
-os.system("sudo ifdown wlan0")
-os.system("sudo ifup wlan0")
+os.system("ifdown wlan0")
+os.system("ifup wlan0")
