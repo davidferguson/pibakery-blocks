@@ -1,0 +1,17 @@
+{
+	"name": "wifisetup",
+	"text": "Setup WiFi\nNetwork: %1\nPass: %2",
+	"script": "networkConnect.py",
+	"args": [
+		{
+			"type": "field",
+			"default": "network-name"
+		},
+		{
+			"type": "field",
+			"default": "network-password"
+		}
+	],
+	"reboot": true,
+	"type": "network"
+}
