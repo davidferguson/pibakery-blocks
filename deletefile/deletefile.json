@@ -1,7 +1,7 @@
 {
 	"name": "deletefile",
 	"text": "Delete file/folder %1",
-	"script": "rm -r",
+	"script": "deleteFile.sh",
 	"args": [
 		{
 			"type": "field",
