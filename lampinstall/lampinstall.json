@@ -1,0 +1,8 @@
+{
+	"name": "lampinstall",
+	"text": "Install Apache/PHP/MySQL",
+	"script": "lampInstall.sh",
+	"args": [],
+	"reboot": false,
+	"type": "software"
+}
