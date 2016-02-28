@@ -1,7 +1,7 @@
 {
 	"name": "reboot",
 	"text": "Reboot",
-	"script": "reboot",
+	"script": "reboot.sh",
 	"args": [],
 	"reboot": false,
 	"type": "other"
