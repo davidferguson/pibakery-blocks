@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "bootbehaviour",
+    "changepass",
+    "deletefile",
+    "expandsd",
+    "lampinstall",
+    "packageinstall",
+    "reboot",
+    "shutdown",
+    "vncserver",
+    "wifisetup"
+  ]
+}
