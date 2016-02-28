@@ -1,6 +1,6 @@
 {
 	"name": "wifisetup",
-	"text": "Setup WiFi\nNetwork: %1\nPass: %2",
+	"text": "Setup WiFi\nNetwork: %1\\nPass: %2",
 	"script": "networkConnect.py",
 	"args": [
 		{
