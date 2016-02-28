@@ -9,5 +9,5 @@
 		}
 	],
 	"reboot": true,
-	"type": "network"
+	"type": "setting"
 }
