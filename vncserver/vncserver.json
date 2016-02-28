@@ -1,0 +1,13 @@
+{
+	"name": "vncserver",
+	"text": "Install VNC Server\nPassword: %1",
+	"script": "vncInstall.sh",
+	"args": [
+		{
+			"type": "field",
+			"default": "vnc-password"
+		}
+	],
+	"reboot": false,
+	"type": "software"
+}
