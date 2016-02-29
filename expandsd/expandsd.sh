@@ -1,0 +1,1 @@
+raspi-config --expand-rootfs
