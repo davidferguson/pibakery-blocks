@@ -1,6 +1,6 @@
 {
 	"name": "vncserver",
-	"text": "Install VNC Server\nPassword: %1",
+	"text": "Install VNC Server\\nPassword: %1",
 	"script": "vncInstall.sh",
 	"args": [
 		{
