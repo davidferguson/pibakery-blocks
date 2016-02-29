@@ -1,7 +1,7 @@
 {
 	"name": "expandsd",
 	"text": "Expand filesystem to fit SD card",
-	"script": "raspi-config --expand-rootfs",
+	"script": "expandsd.sh",
 	"args": [],
 	"reboot": true,
 	"continue": true,
