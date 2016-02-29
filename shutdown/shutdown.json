@@ -4,6 +4,6 @@
 	"script": "shutdown.sh",
 	"args": [],
 	"reboot": false,
-	"continue": true,
+	"continue": false,
 	"type": "other"
 }
