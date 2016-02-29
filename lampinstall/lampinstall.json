@@ -4,5 +4,6 @@
 	"script": "lampInstall.sh",
 	"args": [],
 	"reboot": false,
+	"continue": true,
 	"type": "software"
 }
