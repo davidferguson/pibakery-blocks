@@ -9,5 +9,6 @@
 		}
 	],
 	"reboot": false,
+	"continue": true,
 	"type": "software"
 }
