@@ -13,5 +13,6 @@
 		}
 	],
 	"reboot": false,
+	"continue": true,
 	"type": "network"
 }
