@@ -9,5 +9,6 @@
 		}
 	],
 	"reboot": true,
+	"continue": true,
 	"type": "setting"
 }
