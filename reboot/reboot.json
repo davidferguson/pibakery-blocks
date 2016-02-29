@@ -4,5 +4,6 @@
 	"script": "reboot.sh",
 	"args": [],
 	"reboot": false,
+	"continue": false,
 	"type": "other"
 }
