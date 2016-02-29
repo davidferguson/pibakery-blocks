@@ -4,5 +4,6 @@
 	"script": "raspi-config --expand-rootfs",
 	"args": [],
 	"reboot": true,
+	"continue": true,
 	"type": "setting"
 }
