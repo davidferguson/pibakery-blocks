@@ -1,7 +1,7 @@
 {
 	"name": "wifisetup",
 	"text": "Setup WiFi\\nNetwork: %1\\nPass: %2",
-	"script": "networkConnect.py",
+	"script": "wifiConnect.py",
 	"args": [
 		{
 			"type": "field",
