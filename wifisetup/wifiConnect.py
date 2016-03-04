@@ -12,7 +12,7 @@ network={
 wifiSSID = sys.argv[1]
 wifiPSK = sys.argv[2]
 
-wifiText.replace("WIFI-SSID", wifiSSID).replace("WIFI-PSK", wifiPSK)
+wifiText = wifiText.replace("WIFI-SSID", wifiSSID).replace("WIFI-PSK", wifiPSK)
 
 with open("/etc/wpa_supplicant/wpa_supplicant.conf", "a") as wifiFile:
 	wifiFile.write(wifiText)
