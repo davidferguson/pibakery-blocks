@@ -12,7 +12,7 @@
 			"default": "network-password"
 		}
 	],
-	"reboot": false,
+	"reboot": true,
 	"continue": true,
 	"type": "network"
 }
