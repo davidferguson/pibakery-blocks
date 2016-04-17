@@ -1,5 +1,3 @@
 {
-	"blocksVersion": 2,
-	"osVersion": 1,
-	"osPath": "http://pibakery.org/raspbian-pibakery.img"
+	"blocksVersion": 3
 }
