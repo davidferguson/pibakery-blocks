@@ -4,11 +4,14 @@
 	"script": "deleteFile.sh",
 	"args": [
 		{
-			"type": "field",
-			"default": "/home/pi/Documents"
+			"type": "text",
+			"default": "/home/pi/Documents",
+			"maxLength":0
 		}
 	],
 	"reboot": false,
 	"continue": true,
-	"type": "other"
+	"type": "other",
+	"shortDescription":"Delete a file or folder",
+	"longDescription":"If you so desire, you can choose to delete a file or folder from your Raspberry Pi. This block will not send the data to the recycle bin, rather it will delete it permanently. Please be careful when using this block."
 }

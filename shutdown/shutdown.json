@@ -5,5 +5,7 @@
 	"args": [],
 	"reboot": false,
 	"continue": false,
-	"type": "other"
+	"type": "other",
+	"shortDescription":"Shuts down your Raspberry Pi",
+	"longDescription":"Exactly what it says on the block, this will shut down your Raspberry Pi."
 }

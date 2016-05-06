@@ -5,5 +5,7 @@
 	"args": [],
 	"reboot": true,
 	"continue": true,
-	"type": "setting"
+	"type": "setting",
+	"shortDescription":"Make sure that you're using your SD card to it's full capacity",
+	"longDescription":"When you first install Raspbian onto an SD card, it won't fill the entire card by default, meaning that you won't be able to use the full capacity of the card. This block expands Raspbian to fill the entire card, giving you as much space as possible."
 }
