@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function getUriFilename() {
     header="$(curl -sI "$1" | tr -d '\r')"
 
