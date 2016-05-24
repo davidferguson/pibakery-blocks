@@ -2,17 +2,28 @@
 
 import sys, os
 
-wifiText = """
+wpaWifi = """
 
 network={
     ssid="WIFI-SSID"
     psk="WIFI-PSK"
 }"""
 
+openWifi = """
+
+network={
+    ssid="WIFI-SSID"
+    key_mgmt=NONE
+}"""
+
 wifiSSID = sys.argv[1]
 wifiPSK = sys.argv[2]
 
-wifiText = wifiText.replace("WIFI-SSID", wifiSSID).replace("WIFI-PSK", wifiPSK)
+if wifiSSID != "":
+	if wifiPSK != "":
+		wifiText = wpaWifi.replace("WIFI-SSID", wifiSSID).replace("WIFI-PSK", wifiPSK)
+	else:
+		wifiText = openWifi.replace("WIFI-SSID", wifiSSID)
 
 os.system("killall wpa_supplicant")
 with open("/etc/wpa_supplicant/wpa_supplicant.conf", "a") as wifiFile:
