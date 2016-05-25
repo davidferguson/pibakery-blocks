@@ -1,6 +1,6 @@
 {
 	"name": "wifisetup",
-	"text": "Setup WiFi\\nNetwork: %1\\nPass: %2",
+	"text": "Setup WiFi\\nNetwork: %1\\nPass: %2\\nType: %3",
 	"script": "wifiConnect.py",
 	"args": [
 		{
@@ -12,6 +12,10 @@
 			"type": "text",
 			"default": "network-password",
 			"maxLength":0
+		},
+		{
+			"type": "menu",
+			"options": ["WPA/WPA2", "WEP", "Open (no password)"]
 		}
 	],
 	"reboot": false,
