@@ -9,7 +9,7 @@
 			"maxLength":0
 		}
 	],
-	"reboot": false,
+	"network": false,
 	"continue": true,
 	"type": "other",
 	"shortDescription":"Delete a file or folder",

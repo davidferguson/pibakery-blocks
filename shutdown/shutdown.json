@@ -3,7 +3,7 @@
 	"text": "Shutdown",
 	"script": "shutdown.sh",
 	"args": [],
-	"reboot": false,
+	"network": false,
 	"continue": false,
 	"type": "other",
 	"shortDescription":"Shuts down your Raspberry Pi",

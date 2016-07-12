@@ -9,7 +9,7 @@
 			"maxLength":8
 		}
 	],
-	"reboot": false,
+	"network": false,
 	"continue": true,
 	"type": "software",
 	"shortDescription":"Install a remote desktop server on your Raspberry Pi. Works without an internet connection.",

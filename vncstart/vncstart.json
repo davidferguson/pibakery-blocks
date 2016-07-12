@@ -9,7 +9,7 @@
 			"maxLength":0
 		}
 	],
-	"reboot": false,
+	"network": false,
 	"continue": true,
 	"type": "software",
 	"shortDescription":"Run a VNC server on a designated port. This requires a VNC server to already be installed - use the Install VNC Server block.",

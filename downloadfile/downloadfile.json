@@ -14,7 +14,7 @@
 			"maxLength":0
 		}
 	],
-	"reboot": false,
+	"network": true,
 	"continue": true,
 	"type": "network",
 	"shortDescription":"Download a file from the internet to a location on your Raspberry Pi. This block requires an internet connection to work.",

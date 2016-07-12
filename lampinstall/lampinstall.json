@@ -3,7 +3,7 @@
 	"text": "Install Apache/PHP/MySQL",
 	"script": "lampInstall.sh",
 	"args": [],
-	"reboot": false,
+	"network": true,
 	"continue": true,
 	"type": "software",
 	"shortDescription":"Install a full web server on your Raspberry Pi. Requires internet connection.",

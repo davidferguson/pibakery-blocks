@@ -3,7 +3,7 @@
 	"text": "Reboot",
 	"script": "reboot.sh",
 	"args": [],
-	"reboot": false,
+	"network": false,
 	"continue": false,
 	"type": "other",
 	"shortDescription":"Reboots your Raspberry Pi",

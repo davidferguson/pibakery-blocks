@@ -9,7 +9,7 @@
 			"maxLength":0
 		}
 	],
-	"reboot": false,
+	"network": true,
 	"continue": true,
 	"type": "software",
 	"shortDescription":"Install any package from the Raspbian repositories. Internet connection required.",

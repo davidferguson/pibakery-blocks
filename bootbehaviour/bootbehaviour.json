@@ -8,7 +8,7 @@
 			"options": ["Console", "Console logged in", "Desktop", "Desktop logged in"]
 		}
 	],
-	"reboot": true,
+	"network": false,
 	"continue": true,
 	"type": "setting",
 	"shortDescription":"Alter what happens when you power on your Raspberry Pi",

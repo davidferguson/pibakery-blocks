@@ -9,7 +9,7 @@
 			"maxLength":0
 		}
 	],
-	"reboot": false,
+	"network": false,
 	"continue": true,
 	"type": "setting",
 	"shortDescription":"Change the password for the default pi user",

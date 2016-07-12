@@ -18,7 +18,7 @@
 			"options": ["WPA/WPA2", "WEP", "Open (no password)"]
 		}
 	],
-	"reboot": false,
+	"network": false,
 	"continue": true,
 	"type": "network",
 	"shortDescription":"Automatically connect to a WiFi network.",
