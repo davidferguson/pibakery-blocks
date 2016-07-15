@@ -1,3 +1,5 @@
+#!/bin/bash
+
 umask 0077
 mkdir -p "/home/pi/.vnc"
 chmod go-rwx "/home/pi/.vnc"

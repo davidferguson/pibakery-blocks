@@ -1,1 +1,2 @@
-rm -r $1
+#!/bin/bash
+rm -r "$1"

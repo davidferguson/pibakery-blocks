@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $2 == "root" ]; then
   $1
 else
