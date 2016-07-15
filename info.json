@@ -11,6 +11,7 @@
     "downloadfile",
     "bootbehaviour",
     "changepass",
+    "sethostname",
     "runcommand",
     "runpython",
     "deletefile",
