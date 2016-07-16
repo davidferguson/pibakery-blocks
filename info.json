@@ -1,6 +1,6 @@
 {
   "version": 1.0,
-  "compressedMD5": "13ddc9f3eded848e663bbd2d49f76b5e",
+  "compressedMD5": "ccd8a4084986dbbceda36a423d829702",
   "downloadUrl": "https://github.com/davidferguson/pibakery-blocks/releases/download/v0.1.0/pibakery-blocks.zip",
   "loadOrder": [
     "packageinstall",
