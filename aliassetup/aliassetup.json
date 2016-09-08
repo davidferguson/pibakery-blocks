@@ -10,5 +10,5 @@
 	],
 	
 	"shortDescription":"set up the global alias file /etc/bash_alias",
-	"longDescription":"set up the global alias file, located at /etc/bash_alias. To avoid duplication, please only add alias's on first boot, unless you know what your doing. Please make sure to also run the 'addalias' block in first boot to actually add aliases"
+	"longDescription":"set up the global alias file, located at /etc/bash_alias. To avoid duplication, please only add alias's on first boot, unless you know what your doing. Please make sure to also run the 'addalias' block in first boot to actually add aliases//n requires system restart"
 }
