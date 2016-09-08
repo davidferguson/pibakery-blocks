@@ -1,6 +1,6 @@
 {
 	"name": "RetroPieSetup",
-	"text": "Installs RetroPie: %1\\nRequires internet connection",
+	"text": "Install RetroPie\\nRequires internet connection",
 	"script": "RetroPieInstall.sh",
 	"args": [],
 	"network": true,
