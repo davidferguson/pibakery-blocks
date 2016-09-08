@@ -20,5 +20,5 @@
 	],
 	
 	"shortDescription":"Add alias to the global alias file /etc/bash_alias",
-	"longDescription":"By using a bash script, this block allows for alias's to be added to the global alias file, located at /etc/bash_alias. To avoid duplication, please only add alias's on first boot, unless you know what your doing. Please make sure to also run the 'aliassetup' block in first boot"
+	"longDescription":"By using a bash script, this block allows for alias's to be added to the global alias file, located at /etc/bash_alias. To avoid duplication, please only add alias's on first boot, unless you know what your doing. Please make sure to also run the 'aliassetup' block in first boot//nrequires system restart"
 }
