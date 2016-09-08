@@ -5,7 +5,7 @@
 	"args": [
 		{
 			"type": "text",
-			"default": "raspberrypi.local",
+			"default": "raspberrypi",
 			"maxLength":0
 		}
 	],
