@@ -1,0 +1,32 @@
+{
+  "name": "staticipsetup",
+  "text": "Static IP: %1",
+  "script": "static_ip.sh",
+  "type": "network",
+  "category": "network",
+  "args": [
+    {
+      "type": "string",
+      "default": "eth0",
+      "maxLength": 0
+    },
+    {
+      "type": "string",
+      "default": "192.168.1.250",
+      "maxLength": 15
+    },
+    {
+      "type": "string",
+      "default": "255.255.255.0",
+      "maxLength": 15
+    },
+    {
+      "type": "string",
+      "default": "192.168.0.1",
+      "maxLength": 15
+    }
+  ],
+  "continue": true,
+  "shortDescription": "Set a static IP for your Pi",
+  "longDescription": "Set a static IP to make your Pi easier to reach"
+}
