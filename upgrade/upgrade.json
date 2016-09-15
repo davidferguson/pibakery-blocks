@@ -1,7 +1,7 @@
 {
 	"name": "upgrade",
 	"text": "Install upgrade. Requires internet connection.",
-	"script": "update.sh",
+	"script": "upgrade.sh",
 	"args": [],
 	"network": true,
 	"continue": true,
