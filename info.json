@@ -5,6 +5,7 @@
   "loadOrder": [
     "packageinstall",
     "lampinstall",
+    "iqaudio",
     "vncserver",
     "vncstart",
     "wifisetup",
