@@ -1,0 +1,12 @@
+{
+	"name": "Update all packages",
+	"text": "Update all installed packages\\nRequires internet connection.",
+	"script": "updateupgrade.sh",
+	"args": [],
+	"network": true,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"shortDescription":"Update all packages",
+	"longDescription":"This block is exactly the same as running sudo apt-get update and sudo apt-get -y upgrade. An internet connection will be required for this to work."
+}
