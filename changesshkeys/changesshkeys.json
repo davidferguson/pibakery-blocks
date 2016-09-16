@@ -1,0 +1,12 @@
+{
+	"name": "changesshkeys",
+	"text": "Change SSH host keys",
+	"script": "changesshkeys.sh",
+	"args": [],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"shortDescription":"Remove and create new SSH host keys for the SSH server.",
+	"longDescription":"The Raspberry Pi's SSH server contains SSH host keys, which identify that individual Raspberry Pi. This block deleted the existing host keys and creates new ones."
+}
