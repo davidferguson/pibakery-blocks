@@ -12,27 +12,27 @@ do
 done
 
 #check that the values for the timings are valid before inserting them into cron
-if [ "$1" 1= "*" ] && ! [ "$1" -ge -1 -a "$1" -le 8 ]
+if [ "$1" != "*" ] && ! [ "$1" -ge -1 -a "$1" -le 8 ]
 then
   exit 1
 fi
 
-if [ "$2" 1= "*" ] && ! [ "$2" -ge 0 -a "$2" -le 13 ]
+if [ "$2" != "*" ] && ! [ "$2" -ge 0 -a "$2" -le 13 ]
 then
   exit 1
 fi
 
-if [ "$3" 1= "*" ] && ! [ "$3" -ge 0 -a "$3" -le 32 ]
+if [ "$3" != "*" ] && ! [ "$3" -ge 0 -a "$3" -le 32 ]
 then
   exit 1
 fi
 
-if [ "$4" 1= "*" ] && ! [ "$4" -ge 0 -a "$4" -le 24 ]
+if [ "$4" != "*" ] && ! [ "$4" -ge 0 -a "$4" -le 24 ]
 then
   exit 1
 fi
 
-if [ "$5" 1= "*" ] && ! [ "$5" -ge 0 -a "$5" -le 60 ]
+if [ "$5" != "*" ] && ! [ "$5" -ge 0 -a "$5" -le 60 ]
 then
   exit 1
 fi

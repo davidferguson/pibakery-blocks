@@ -18,6 +18,7 @@
     "bootbehaviour",
     "changepass",
     "sethostname",
+    "newcronjob",
     "changesshkeys",
     "runcommand",
     "runpython",
