@@ -1,8 +1,14 @@
 {
 	"name": "lampinstall",
-	"text": "Install Apache/PHP/MySQL\\nRequires internet connection",
+	"text": "Install Apache/PHP/MySQL\\nMySQL root password: %1\\nRequires internet connection",
 	"script": "lampInstall.sh",
-	"args": [],
+	"args": [
+		{
+			"type": "text",
+			"default": "mysql-password",
+			"maxLength":0
+		}
+	],
 	"network": true,
 	"continue": true,
 	"type": "software",
