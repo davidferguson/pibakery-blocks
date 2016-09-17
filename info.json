@@ -19,6 +19,7 @@
     "changepass",
     "sethostname",
     "newcronjob",
+    "uartconsole",
     "changesshkeys",
     "runcommand",
     "runpython",
