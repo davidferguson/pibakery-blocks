@@ -31,4 +31,4 @@ try:
 
 except Exception as e:
     print e
-    return 1
+    sys.exit(1)
