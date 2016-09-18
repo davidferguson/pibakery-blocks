@@ -12,7 +12,7 @@ try:
 
     # Create a new .ssh directory, if necessary.
     if not os.path.exists('.ssh'):
-        os.path.mkdir('.ssh')
+        os.mkdir('.ssh')
 
     # Ensure that .ssh/ is rwx for owner but nobody else.
     os.chmod('.ssh', stat.S_IRWXU)
