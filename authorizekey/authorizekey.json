@@ -1,0 +1,22 @@
+{
+	"name": "authorizekey",
+	"text": "Add public SSH key for user authentication: %1",
+	"script": "authorizekey.py",
+    "args": [
+        {
+            "type": "text",
+            "default": "ssh-rsa ...",
+            "maxLength": 0
+        }
+    ],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Add public SSH key for user authentication.",
+	"longDescription":"The secure shell (SSH) service supports public key authentication. This authorizes the owner of the specified public key to login without entering a password. Paste the contents of your RSA or DSA public key file (e.g.,  ~/.ssh/id_rsa.pub on a Mac or Linux computer) into the text box."
+}
