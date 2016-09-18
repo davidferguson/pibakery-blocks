@@ -23,7 +23,7 @@ try:
     # Append the public key to authorized_keys, creating the
     # file if necessary.
     with open('authorized_keys', 'a') as f:
-        f.write(sys.argv[1])
+        f.write(sys.argv[1] + '\n')
         f.close()
 
     # Ensure that authorized_keys is rw for owner but nobody else.
