@@ -3,12 +3,12 @@
 	"text": "Add public SSH key for user authentication: %1",
 	"script": "authorizekey.py",
     "args": [
-		{
-			"type": "text",
-			"default": "ssh-rsa ...",
-			"maxLength": 0
-		}
-	],
+        {
+            "type": "text",
+            "default": "ssh-rsa ...",
+            "maxLength": 0
+        }
+    ],
 	"network": false,
 	"continue": true,
 	"type": "setting",
