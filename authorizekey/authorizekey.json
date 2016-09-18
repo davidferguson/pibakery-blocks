@@ -1,13 +1,17 @@
 {
 	"name": "authorizekey",
-	"text": "Add public SSH key for user authentication: %1",
-	"script": "authorizekey.py",
+	"text": "Add public SSH key for authentication\\nKey: %1\\nFor user: %2",
+	"script": "authorizekey.sh",
     "args": [
         {
             "type": "text",
-            "default": "ssh-rsa ...",
+            "default": "ssh-rsa public key",
             "maxLength": 0
-        }
+        },
+				{
+					"type": "menu",
+					"options": ["pi", "root"]
+				}
     ],
 	"network": false,
 	"continue": true,

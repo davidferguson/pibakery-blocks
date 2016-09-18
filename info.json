@@ -21,6 +21,7 @@
     "newcronjob",
     "uartconsole",
     "changesshkeys",
+    "authorizekey",
     "runcommand",
     "runpython",
     "deletefile",
