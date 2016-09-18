@@ -20,6 +20,8 @@
     "sethostname",
     "newcronjob",
     "uartconsole",
+    "setspi",
+    "seti2c",
     "changesshkeys",
     "authorizekey",
     "runcommand",
