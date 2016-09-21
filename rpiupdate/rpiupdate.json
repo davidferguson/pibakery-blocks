@@ -1,6 +1,6 @@
 {
 	"name": "rpiupdate",
-	"text": "Update the Raspberry Pi kernel.",
+	"text": "Update the Raspberry Pi kernel.\\nRequires internet connection.\\nRequires restart.",
 	"script": "rpiupdate.sh",
 	"network": true,
 	"continue": true,
