@@ -1,0 +1,16 @@
+{
+	"name": "rpiupdate",
+	"text": "Update the Raspberry Pi kernel.",
+	"script": "rpiupdate.sh",
+	"network": true,
+	"continue": true,
+	"type": "other",
+	"category": "other",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Updates the RPI kernel using the rpi-update utility. Requires networking. Requires reboot.",
+	"longDescription":"Updates the Raspberry Pi kernel, using the rpi-update utility. Depending on network and type of RPI, this will take some time to complete. This block requires networking. Requires reboot to take effect.",
+	"args": [ ]
+}
