@@ -1,6 +1,6 @@
 {
 	"name": "memsplit",
-	"text": "Set the GPU memory to %1",
+	"text": "Set the GPU memory to %1\\nRequires restart to take effect",
 	"script": "memsplit.sh",
 	"network": false,
 	"continue": true,
