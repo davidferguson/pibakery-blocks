@@ -1,10 +1,9 @@
 {
-  "version": 3.1,
-  "compressedMD5": "56424ce5b2fe4c4a61fc6e2eaaada5f3",
-  "downloadUrl": "https://github.com/davidferguson/pibakery-blocks/releases/download/v0.3.1/pibakery-blocks.zip",
+  "version": 3.2,
+  "compressedMD5": "94741eece6f797ff4bcad849fdcae19e",
+  "downloadUrl": "https://github.com/davidferguson/pibakery-blocks/releases/download/v0.3.2/pibakery-blocks.zip",
   "loadOrder": [
-    "vncserver",
-    "vncstart",
+    "vncenable",
     "packageinstall",
     "lampinstall",
     "iqaudio",
