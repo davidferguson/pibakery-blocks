@@ -46,5 +46,22 @@ then
   done
 fi
 
-# Add the static IP to /etc/dhcpcd.conf
-echo -e "interface usb0 \nstatic ip_address=$1" | tee -a /etc/dhcpcd.conf
+# Add the static IP to /etc/dhcpcd.conf, if one is set
+# This is optional because on Windows in case there is
+# a DHCP on the other end
+if [ ! -z "$1" ]
+then
+  echo -e "interface usb0 \nstatic ip_address=$1" | tee -a /etc/dhcpcd.conf
+
+  # If a second argument is specified, add it as a router
+  if [ ! -z "$2" ]
+  then
+    echo -e "static routers=$2" | tee -a /etc/dhcpcd.conf
+
+    # If a third argument is specified, add it as a nameserver
+    if [ ! -z "$3" ]
+    then
+      echo -e "static domain_name_servers=$3"| tee -a /etc/dhcpcd.conf
+    fi
+  fi
+fi
