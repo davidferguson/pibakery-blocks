@@ -5,7 +5,7 @@
 	"args": [
 		{
 			"type": "menu",
-			"options": ["yes", "no"]
+			"options": ["Yes", "No"]
 		}
 	],
 	"network": false,
@@ -17,5 +17,5 @@
 		"raspbian-lite-pibakery.img"
 	],
 	"shortDescription":"Change Wait for Network setting",
-	"longDescription":"By default, the pi will not wait for a network connection when booting. You may want to enable this setting if you rely on network mounted drives"
+	"longDescription":"By default, the pi will not wait for a network connection when booting. You may want to enable this setting if you rely on network mounted drives, or other network services."
 }
