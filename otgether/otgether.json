@@ -1,11 +1,21 @@
 {
 	"name": "otgether",
-	"text": "Set Pi Zero OTG Mode to Ethernet\\nWith Static IP: %1\\nRequires restart to take effect",
+	"text": "Set Pi Zero OTG Mode to Ethernet\\nStatic IP (optional): %1\\nGateway (optional): %2\\nNameserver (optional): %3\\nRequires restart to take effect",
 	"script": "otgEther.sh",
 	"args": [
 		{
 			"type": "text",
 			"default": "169.254.64.64",
+			"maxLength":19
+		},
+		{
+			"type": "text",
+			"default": "",
+			"maxLength":16
+		},
+		{
+			"type": "text",
+			"default": "",
 			"maxLength":16
 		}
 	],
@@ -17,6 +27,6 @@
 		"raspbian-pibakery.img",
 		"raspbian-lite-pibakery.img"
 	],
-	"shortDescription":"Set the Pi Zero to use Ethernet over OTG, with a static IP address.",
-	"longDescription":"The Raspberry Pi Zero has the ability to support OTG gadget mode over it's DATA usb port. This block enables the Ethernet gadget, allowing your Raspberry Pi to be networked to a computer over USB. You need to specify an IP address for your Raspberr Pi, so that you'll be able to connect to it."
+	"shortDescription":"Set the Pi Zero to use Ethernet over OTG, optionally with a static IP address. Also optionally set the gateway and nameserver.",
+	"longDescription":"The Raspberry Pi Zero has the ability to support OTG gadget mode over it's DATA usb port. This block enables the Ethernet gadget, allowing your Raspberry Pi to be networked to a computer over USB. You may specify an IP address (and optionally a netmask in the form XXX.XXX.XXX.XXX/YY) for your Raspberry Pi, so that you'll be able to connect to it.  If one is not set, you must have DHCP on the other end. You can also set optional IP addresses for the gateway and nameserver, to enable outbound networking (for example IP Masquerading.) NOTE: in order to set a gateway, a static IP must be set, and in order to set a nameserver, both a static IP and gateway must be set."
 }
