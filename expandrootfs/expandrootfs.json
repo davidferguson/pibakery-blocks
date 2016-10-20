@@ -1,0 +1,15 @@
+{
+	"name": "expandrootfs",
+	"text": "Expand Filesystem \\nRequires restart to take effect",
+	"script": "expandrootfs.sh",
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category": "setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Expand Filesystem. Requires reboot to take effect.",
+	"longDescription":"Expand Filesystem. Ensures that all of the SD card storage is available to the OS. Requires reboot to take effect.",
+}
