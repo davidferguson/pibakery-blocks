@@ -1,0 +1,27 @@
+{
+	"name": "adduserpass",
+	"text": "Add %1 user\\n with password %2",
+	"script": "adduserpass.py",
+	"args": [
+		{
+			"type":"text",
+			"default":"newuser",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "newpass",
+			"maxLength":0
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Add a user with password or change password",
+	"longDescription":"If the user doesn't exists, this will add a user(with home dir and group). If the user exists, change the password."
+}
