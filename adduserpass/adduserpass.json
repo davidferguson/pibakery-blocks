@@ -1,11 +1,11 @@
 {
-	"name": "changeuserpass",
-	"text": "Set %1 user\\npassword to %2",
-	"script": "changeuserpass.py",
+	"name": "adduserpass",
+	"text": "Add %1 user\\n with password %2",
+	"script": "adduserpass.py",
 	"args": [
 		{
 			"type":"text",
-			"default":"user",
+			"default":"newuser",
 			"maxLength":0
 		},
 		{
@@ -22,6 +22,6 @@
 		"raspbian-pibakery.img",
 		"raspbian-lite-pibakery.img"
 	],
-	"shortDescription":"Change the password for the user",
-	"longDescription":"If you don't change it now, you'll still be able to change it later."
+	"shortDescription":"Add a user with password or change password",
+	"longDescription":"If the user doesn't exists, this will add a user(with home dir and group). If the user exists, change the password."
 }
