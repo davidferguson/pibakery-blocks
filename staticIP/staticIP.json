@@ -1,0 +1,32 @@
+{
+	"name": "staticIP",
+	"text": "Set static IP\\nInterface: %1\\nIP: %2\\nNetmask: %3\\nGateway: %4\\n",
+	"script": "staticIP.py",
+	"network": false,
+	"continue": true,
+	"type": "network",
+	"category":"network",
+	"shortDescription":"Set a static IP address to the selected interface",
+	"longDescription":"This block allows you to set a static IP address to the network interface you have selected, helping out if you do not have access to a screen and/or to a keyboard, to configure the network manually..",
+	"args": [
+		{
+			"type": "menu",
+            "options": ["wlan0", "eth0"]
+		},
+		{
+			"type": "text",
+			"default": "192.168.1.2",
+			"maxLength": 15
+		},
+		{
+			"type": "text",
+			"default": "255.255.255.0",
+			"maxLength":15
+		},
+		{
+			"type": "text",
+			"default": "192.168.1.1",
+			"maxLength": 15
+		}
+	]
+}
