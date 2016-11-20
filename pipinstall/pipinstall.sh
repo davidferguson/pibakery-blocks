@@ -1,11 +1,20 @@
 #!/bin/bash
 
-apt-get update
-
 if [ "$2" == "pip" ]; then
-  DEBIAN_FRONTEND=noninteractive apt-get install -y python-pip
+  hash pip list &> /dev/null
+  if ! [ $? -eq 0 ]; then
+    apt-get update
+    DEBIAN_FRONTEND=noninteractive apt-get install -y python-pip
+  fi
+  
   pip install "$1"
+
 else
-  DEBIAN_FRONTEND=noninteractive apt-get install -y python3-pip
+  hash pip3 list &> /dev/null
+  if ! [ $? -eq 0 ]; then
+    apt-get update
+    DEBIAN_FRONTEND=noninteractive apt-get install -y python3-pip
+  fi
+
   pip3 install "$1"
 fi
