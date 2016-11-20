@@ -1,6 +1,6 @@
 {
 	"name": "pipinstall",
-	"text": "Install: %1 using %2\\nRequires internet connection",
+	"text": "Install: %1 using %2\\nCan take a little while to install pip/pip3\\nRequires internet connection",
 	"script": "pipinstall.sh",
 	"network": true,
 	"continue": true,
