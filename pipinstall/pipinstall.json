@@ -7,7 +7,7 @@
 	"type": "software",
 	"category":"software",
 	"shortDescription":"Pip install the listed package",
-	"longDescription":"This block allows you to install the listed package using pip or pip3. As at first execution, it will install python-pip or python3-pip, it may take some time to complete. Requires internet connection.",
+	"longDescription":"This block allows you to install the listed package using pip or pip3. At first execution, it will install python-pip or python3-pip, it may take some time to complete. Requires internet connection.",
 	"args": [
 		{
 			"type": "text",
