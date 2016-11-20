@@ -2,7 +2,7 @@
 
 apt-get update
 
-if [ "$2" == "pip" ] then
+if [ "$2" == "pip" ]; then
   DEBIAN_FRONTEND=noninteractive apt-get install -y python-pip
   pip install "$1"
 else
