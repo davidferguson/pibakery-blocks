@@ -1,7 +1,7 @@
 {
-	"name": "sshPort",
+	"name": "changeSSHport",
 	"text": "Change SSH port to %1",
-	"script": "changeSSHport.py",
+	"script": "changeSSHport.sh",
 	"network": false,
 	"continue": true,
 	"type": "setting",
