@@ -12,7 +12,7 @@
 		{
 			"type": "text",
 			"default": "package-name",
-			"maxLength": 300
+			"maxLength": 0
 		},
 		{
 			"type": "menu",
