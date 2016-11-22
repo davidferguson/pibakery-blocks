@@ -1,0 +1,24 @@
+{
+	"name": "addalias",
+	"text": "Add alias %1 to global alias file\\nCommand: %2 ",
+	"script": "addalias.sh",
+	"network": false,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"args": [
+		{
+			"type": "text",
+			"default": "ll",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "ls -al",
+			"maxLength":0
+		}
+	],
+	
+	"shortDescription":"Add alias to the global alias file /etc/bash_alias",
+	"longDescription":"By using a bash script, this block allows for alias's to be added to the global alias file, located at /etc/bash_alias. To avoid duplication, please only add alias's on first boot, unless you know what your doing. Please make sure to also run the 'aliassetup' block in first boot//nrequires system restart"
+}
