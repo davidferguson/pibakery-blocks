@@ -24,6 +24,11 @@
       "name": "other",
       "display": "Other",
       "colour": "290"
-    }
+    },
+	{
+	  "name": "test",
+      "display": "Beta Blocks",
+      "colour": "200"
+	}
   ]
 }
