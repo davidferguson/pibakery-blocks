@@ -1,0 +1,21 @@
+{
+	"name": "setkiosk",
+	"text": "Set Kiosk to %1",
+	"script": "setkiosk.sh",
+	"args": [
+		{
+			"type": "text",
+			"default": "http://www.pibakery.org",
+			"maxLength": 0
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img"
+	],
+	"shortDescription":"Set your pi in kiosk mode to show a webpage after boot.",
+	"longDescription":"Launches the Chromuim browser that comes with PIXEL. If unclutter is installed it will hide your cursor also"
+}
