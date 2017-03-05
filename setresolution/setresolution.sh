@@ -9,3 +9,6 @@ sed -i "s+^#\?\(${valuename}\)=.*$+\1=${newvalue}+" "${filepath}";
 
 valuename="disable_overscan" newvalue="$3";
 sed -i "s+^#\?\(${valuename}\)=.*$+\1=${newvalue}+" "${filepath}";
+
+valuename="hdmi_force_hotplug" newvalue="$3";
+sed -i "s+^#\?\(${valuename}\)=.*$+\1=${newvalue}+" "${filepath}";

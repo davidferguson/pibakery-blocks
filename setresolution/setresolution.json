@@ -1,6 +1,6 @@
 {
 	"name": "setresolution",
-	"text": "Set HDMI Group to %1\\nHDMI Mode to %2\\nDisable Overscan %3",
+	"text": "Set HDMI Group to %1\\nHDMI Mode to %2\\nDisable Overscan %3\\nForce HDMI on boot to %4",
 	"script": "setresolution.sh",
 	"args": [
 		{
@@ -102,6 +102,13 @@
 				"84",
 				"85",
 				"86"
+			]
+		},
+		{
+			"type": "menu",
+			"options": [
+				"0",
+				"1"
 			]
 		},
 		{
