@@ -1,0 +1,17 @@
+{
+	"name": "Docker",
+	"text": "Install Docker-CE\\nRequires Internet Connection",
+	"script": "docker.sh",
+	"args": [],
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category":"software",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img",
+		"raspbian-lite.img"
+	],
+	"shortDescription":"Installs Docker-CE from the official repo.",
+	"longDescription":"Installs Docker Community Edition on your RaspberryPi from the official repository. As this block will download the file from the internet, an internet connection is required."
+}
