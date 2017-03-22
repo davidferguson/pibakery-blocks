@@ -1,0 +1,16 @@
+{
+	"name": "powerdown17",
+	"text": "Shutdown switch on GPIO17",
+	"script": "powerdown17.sh",
+	"args": [],
+	"network": false,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Installs a shutdown command when gpio17 is grounded",
+	"longDescription":"Installs a shutdown command when gpio17 is grounded"
+}
