@@ -1,8 +1,13 @@
 {
 	"name": "powerdown17",
-	"text": "Shutdown switch on GPIO17",
+	"text": "Safe Shutdown switch on GPIO %1",
 	"script": "powerdown17.sh",
-	"args": [],
+	"args": [
+		{
+			"type": "menu",
+			"options": ["17","21","3","4","5","7","10","11","12","13","14","16","18","23","24","25","26","27","2","6","8","9","15","17","19","20","22"]
+		}
+	],
 	"network": false,
 	"continue": true,
 	"type": "other",
@@ -11,6 +16,6 @@
 		"raspbian-pibakery.img",
 		"raspbian-lite-pibakery.img"
 	],
-	"shortDescription":"Installs a shutdown command when gpio17 is grounded",
-	"longDescription":"Installs a shutdown command when gpio17 is grounded"
+	"shortDescription":"Installs a shutdown command when gpio pin is grounded",
+	"longDescription":"Installs a shutdown command when gpio pin is grounded"
 }
