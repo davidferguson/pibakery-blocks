@@ -5,3 +5,4 @@ su - root -c cp /boot/PiBakery/blocks/powerdown17/powerdown.service /etc/systemd
 su - root -c chmod +x /home/pi/powerdown/powerdown.py
 su - root -c systemctl enable powerdown.service
 su - root -c systemctl start  powerdown.service
+sed -i 's/=17/='$1'/' /home/pi/powerdown/powerdown.py
