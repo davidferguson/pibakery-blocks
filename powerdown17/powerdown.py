@@ -56,8 +56,8 @@ def lipopi_cleanup():
 
 lipopi = {}
 
-lipopi['shutdown_pin']    =17
-lipopi['reboot_pin']    =27
+lipopi['shutdown_pin']    =XXPIN
+lipopi['reboot_pin']    =YYPIN
 
 lipopi['shutdown_wait'] = 2  # seconds - how long to wait before actual shutdown - can be 0 if you want
 
