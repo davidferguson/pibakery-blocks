@@ -15,9 +15,21 @@ def lipopi_setup():
     GPIO.setmode(GPIO.BCM)
 
     GPIO.setup(lipopi['shutdown_pin'], GPIO.IN, pull_up_down=GPIO.PUD_UP)
+    GPIO.setup(lipopi['reboot_pin'], GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
     GPIO.add_event_detect(lipopi['shutdown_pin'], GPIO.FALLING, callback=lipopi_user_shutdown, bouncetime=300)
+    GPIO.add_event_detect(lipopi['reboot_pin'], GPIO.FALLING, callback=lipopi_user_reboot, bouncetime=300)
 
+def lipopi_user_reboot(channel):
+    global lipopi
+
+    cmd = "sudo wall 'System shutting down in %d seconds'" % lipopi['shutdown_wait']
+    os.system(cmd)
+
+    time.sleep(lipopi['shutdown_wait'])
+
+    GPIO.cleanup()
+    os.system("sudo reboot")
 
 
 # Detect when the switch is pressed - wait shutdown_wait seconds - then shutdown
@@ -31,7 +43,7 @@ def lipopi_user_shutdown(channel):
     time.sleep(lipopi['shutdown_wait'])
 
     GPIO.cleanup()
-    os.system("sudo shutdown now")
+    os.system("sudo shutdown now -h")
 
 # Close the log file, reset the GPIO pins
 def lipopi_cleanup():
@@ -45,6 +57,7 @@ def lipopi_cleanup():
 lipopi = {}
 
 lipopi['shutdown_pin']    =17
+lipopi['reboot_pin']    =18
 
 lipopi['shutdown_wait'] = 2  # seconds - how long to wait before actual shutdown - can be 0 if you want
 
