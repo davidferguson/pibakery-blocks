@@ -23,7 +23,7 @@ def lipopi_setup():
 def lipopi_user_reboot(channel):
     global lipopi
 
-    cmd = "sudo wall 'System shutting down in %d seconds'" % lipopi['shutdown_wait']
+    cmd = "sudo wall 'System rebooting in %d seconds'" % lipopi['shutdown_wait']
     os.system(cmd)
 
     time.sleep(lipopi['shutdown_wait'])
