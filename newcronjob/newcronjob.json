@@ -1,32 +1,32 @@
 {
 	"name": "newcronjob",
 	"text": "Create new cron job\\nMinute:%1\\nHour:%2\\nDay of month:%3\\nMonth:%4\\nDay of week%5\\nCommand: %6\\nAs user: %7",
-	"script": "newcronjob.sh",
+	"script": "cronjob.sh",
 	"args": [
 		{
 			"type": "text",
 			"default": "*",
-			"maxLength":1
+			"maxLength":4
 		},
 		{
 			"type": "text",
 			"default": "*",
-			"maxLength":2
+			"maxLength":4
 		},
 		{
 			"type": "text",
 			"default": "*",
-			"maxLength":2
+			"maxLength":4
 		},
 		{
 			"type": "text",
 			"default": "*",
-			"maxLength":2
+			"maxLength":4
 		},
 		{
 			"type": "text",
 			"default": "*",
-			"maxLength":2
+			"maxLength":4
 		},
 		{
 			"type": "text",
