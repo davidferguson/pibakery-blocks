@@ -1,7 +1,7 @@
 {
-	"name": "install_nodejs",
+	"name": "nodejsinstall",
 	"text": "Install node.js version %1 for raspbian hardware %2",
-	"script": "install_nodejs.sh",
+	"script": "nodejsinstall.sh",
 	"network": true,
 	"continue": true,
 	"type": "software",

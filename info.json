@@ -3,11 +3,14 @@
   "compressedMD5": "94741eece6f797ff4bcad849fdcae19e",
   "downloadUrl": "https://github.com/davidferguson/pibakery-blocks/releases/download/v0.3.2/pibakery-blocks.zip",
   "loadOrder": [
+    "sshenable",
     "vncenable",
     "packageinstall",
     "lampinstall",
     "iqaudio",
     "wifisetup",
+    "staticipsetup",
+    "ntpsetup",
     "downloadfile",
     "otgether",
     "otgmidi",
@@ -21,12 +24,15 @@
     "uartconsole",
     "setspi",
     "seti2c",
+    "set1wire",
     "changesshkeys",
     "authorizekey",
     "runcommand",
     "runpython",
     "deletefile",
     "reboot",
-    "shutdown"
+    "shutdown",
+    "watchdog",
+    "nodejsinstall"
   ]
 }

@@ -1,7 +1,7 @@
 {
-	"name": "setup_ip",
+	"name": "staticipsetup",
 	"text": "Setup static IP address\\n interface %1\\n address %2\\n subnet %3\\n router %4\\n dns %5",
-	"script": "setup_ip.sh",
+	"script": "staticipsetup.sh",
 	"network": true,
 	"continue": true,
 	"type": "network",

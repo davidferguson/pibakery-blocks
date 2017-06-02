@@ -1,7 +1,7 @@
 {
-	"name": "setup_ntp",
+	"name": "ntpsetup",
 	"text": "Setup local NTP server\\n ip address %1",
-	"script": "setup_ntp.sh",
+	"script": "ntpsetup.sh",
 	"network": true,
 	"continue": true,
 	"type": "network",
