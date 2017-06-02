@@ -1,0 +1,18 @@
+{
+	"name": "setup_ntp",
+	"text": "Setup local NTP server\\n ip address %1",
+	"script": "setup_ntp.sh",
+	"network": true,
+	"continue": true,
+	"type": "network",
+	"category": "network",
+	"shortDescription":"setup local NTP server ip address in /etc/ntp.conf",
+	"longDescription":"this block will set a local NTP server deactivating the debian ntp server pool in /etc/ntp.conf",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+    "args": [
+        { "type": "text", "default": "192.168.0.1", "maxLength": 15}
+    ]
+}

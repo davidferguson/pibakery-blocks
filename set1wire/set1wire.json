@@ -1,0 +1,21 @@
+{
+	"name": "set1wire",
+	"text": "%1 automatic loading of 1-wire kernel module",
+	"script": "set1wire.sh",
+	"args": [
+		{
+			"type": "menu",
+			"options": ["Enable", "Disable"]
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Enable or disable automatic loading of 1 wire kernel module",
+	"longDescription":"The kernel 1 wire module is used for communication with some 1 wire sensor devices. You can choose to have this automatically enabled on boot, or not, which is the default."
+}

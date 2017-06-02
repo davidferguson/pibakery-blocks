@@ -1,0 +1,19 @@
+{
+	"name": "install_nodejs",
+	"text": "Install node.js version %1 for raspbian hardware %2",
+	"script": "install_nodejs.sh",
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category": "software",
+	"shortDescription":"Download and install node.js",
+	"longDescription":"this block will download and install node.js",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+    "args": [
+        { "type": "text", "default": "6.10.3", "maxLength": 10 },
+        { "type": "menu", "options": ["armv7l", "armv6l", "arm64"] }
+    ]
+}
