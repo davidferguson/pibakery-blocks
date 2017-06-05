@@ -1,0 +1,25 @@
+{
+	"name": "wifi4eap",
+	"text": "configure wifi connection\\nCountry: %1\\nSecurity: %2\\nSSID %3\\nPassword %4: %5\\nAccount (EAP only): %6\\nPriority(optional): %7\\nNetwork-ID(optional): %8",
+	"script": "wifi4eap.sh",
+	"network": false,
+	"continue": true,
+	"type": "network",
+	"category": "network",
+	"shortDescription":"configure wpa_supplicant.conf",
+	"longDescription":"this block will configure /etc/wpa_supplicant/wpa_supplicant.conf for wifi network(s)",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+    "args": [
+        { "type": "text", "default": "DE", "maxLength": 0 },
+        { "type": "menu", "options": [ "WPA-EAP", "WPA-PSK", "WEP", "NONE" ] },
+        { "type": "text", "default": "networkSSID", "maxLength": 0 },
+        { "type": "menu", "options": [ "ENCODE", "ENCODED", "CLEAR" ] },
+        { "type": "text", "default": "myPassword", "maxLength": 0 },
+        { "type": "text", "default": "myAccount", "maxLength": 0 },
+        { "type": "number", "default": "10"},
+        { "type": "text", "default": "default", "maxLength": 0 }
+    ]
+}
