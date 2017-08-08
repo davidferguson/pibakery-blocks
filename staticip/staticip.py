@@ -53,7 +53,7 @@ else:
 with open("/etc/dhcpcd.conf", "a") as ipFile:
 	ipFile.write(ipText)
 
-os.system("Configuring Static IP")
+os.system("/etc/init.d/networking restart")
 time.sleep(5)
 
 
