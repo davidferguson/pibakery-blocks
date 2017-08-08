@@ -32,5 +32,5 @@
 		"raspbian-lite-pibakery.img"
 	],
 	"shortDescription":"Set a static IP address. (Hint: Use before WiFi setup)",
-	"longDescription":"This block allows you to set a static IP address.  Depending on how this block is used, a reboot may be needed for the address to take effect.  For example, if the Pi already has a network connection, then it will already have an address assigned by the router.  A reboot should reassign the IP."
+	"longDescription":"This block allows you to set a static IP address.  Depending on how this block is used, a reboot may be needed for the address to take effect.  For example, if the Pi already has a network connection, then it will already have an address assigned by the router.  A reboot should reassign the IP.  Using the "Both" option will assign the same IP to both wired and wireless connections.  If you want wired and wireless to have different IPs, then use two separate blocks."
 }
