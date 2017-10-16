@@ -2,7 +2,12 @@
 	"name": "unifiinstall",
 	"text": "Install Unifi Managment\\nRequires internet connection",
 	"script": "unifiinstall.sh",
-	"args": [],
+	"args": [
+			{
+			"type": "menu",
+			"options": ["stable", "testing","oldstable"]
+		}
+	],
 	"network": true,
 	"continue": true,
 	"type": "software",
