@@ -1,6 +1,6 @@
 {
 	"name": "unifiinstall",
-	"text": "Install Unifi Managment\\nRequires internet connection",
+	"text": "Install Unifi Managment\\nRequires internet connection\\nVersion: $1",
 	"script": "unifiinstall.sh",
 	"args": [
 			{
