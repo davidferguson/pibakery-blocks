@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "text": "Install NodeJS\\nversion: %1\\nRequires internet connection",
+  "script": "node-install.sh",
+  "args": [
+    {
+      "type": "menu",
+      "options": ["4.x", "5.x", "6.x", "7.x", "8.x", "9.x"]
+    }
+  ],
+  "network": true,
+  "continue": true,
+  "type": "software",
+  "category":"software",
+  "supportedOperatingSystems": [
+    "raspbian-pibakery.img",
+    "raspbian-lite-pibakery.img"
+  ],
+  "shortDescription":"Install NodeJS",
+  "longDescription":"Install ytour favorite version of node."
+}
