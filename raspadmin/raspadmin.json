@@ -1,0 +1,33 @@
+{
+	"name": "raspadmin",
+	"text": "raspadmin install and set hostname\\nSSL cert info:\\nCountry Name (2 letter code):%1\\nState or Province Name:%2\\nLocality Name (eg, city):%3\\nSet hostname to:%4\\nURL for web interface\\nhttps://hostname:443",
+	"script": "raspadmin.sh",
+	"args": [
+		{
+			"type": "text",
+			"default": "GB"
+		},
+		{
+			"type": "text",
+			"default": "Essex"
+		},
+		{
+			"type": "text",
+			"default": "Leigh"
+		},
+		{
+			"type": "text",
+			"default": "MyPi"
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Install a web interface and change the hostname for the Raspberry Pi.",
+	"longDescription":"Install a web interface and change the hostname for the Raspberry Pi. This will install sevral extra compenents that are needed, a SSL cert will also be created for you"
+}
