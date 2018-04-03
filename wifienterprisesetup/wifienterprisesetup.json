@@ -1,5 +1,5 @@
 {
-	"name": "wifisetup",
+	"name": "wifienterprisesetup",
 	"text": "Setup WiFi\\nNetwork: %1\\nUsername: %2\\nUserpass: %3\\nType: %4\\nCountry (ISO 3166):%5",
 	"script": "wifiConnect.py",
 	"args": [
