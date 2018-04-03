@@ -22,7 +22,7 @@ countryCode = sys.argv[5]
 
 if wifiSSID != "" and wifiType != "":
     if wifiType == "WPA/WPA2":
-        wifiText = wpaWifi.replace("WIFI-SSID", wifiSSID).replace("USERNAME", userName).replace("USERPASSWORD", userPassword)
+        wifiText = peapMschapv2Wifi.replace("WIFI-SSID", wifiSSID).replace("USERNAME", userName).replace("USERPASSWORD", userPassword)
 
 with open("/etc/wpa_supplicant/wpa_supplicant.conf", "a") as wifiFile:
 	wifiFile.write(wifiText)
