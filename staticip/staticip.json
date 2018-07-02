@@ -1,0 +1,36 @@
+{
+	"name": "staticip",
+	"text": "Static IP\\nStatic IP: %1\\nRouter IP: %2\\nDomain Name Server IP: %3\\nType: %4",
+	"script": "staticip.py",
+	"args": [
+		{
+			"type": "text",
+			"default": "192.168.1.###",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "192.168.1.1",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "192.168.1.1",
+			"maxLength":0
+		},
+		{
+			"type": "menu",
+			"options": ["WiFi", "Ethernet", "Both"]
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "other",
+	"category":"network",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Set a static IP address. (Hint: Use before WiFi setup)",
+	"longDescription":"This block allows you to set a static IP address.  Depending on how this block is used, a reboot may be needed for the address to take effect.  For example, if the Pi already has a network connection, then it will already have an address assigned by the router.  A reboot should reassign the IP.  Using the "Both" option will assign the same IP to both wired and wireless connections.  If you want wired and wireless to have different IPs, then use two separate blocks."
+}
