@@ -1,0 +1,83 @@
+#!/bin/bash
+#
+# Called by the self extracting installer.  Everything we need
+# is in ./etc.  Parse arguments, do the substitutions and install
+# the files.
+#
+ap_ssid="$1"
+ap_password="$2"
+ap_bridge="$3"
+st_ssid="$4"
+st_password="$5"
+st_type="$6"
+
+function wait_for_network {
+    for ((i=0;i<50;i++)); do
+	ping -w 1 8.8.8.8 >/dev/null 2>&1
+	if [ $? -eq 0 ]
+	then
+	    sleep 1
+	    break
+	fi
+	sleep 4
+    done
+}
+
+function enable_station {
+    if [ "$st_type" = "Open (no password)" ]; then
+    cat etc/wpa_supplicant/wpa_supplicant-none.conf | \
+	sed "s/_ST_SSID_/$st_ssid/g" > /etc/wpa_supplicant/wpa_supplicant.conf
+    elif [ "$st_type" = "WEP" ]; then
+	cat etc/wpa_supplicant/wpa_supplicant-wep.conf | \
+	    sed "s/_ST_SSID_/$st_ssid/g" | \
+	    sed "s/_ST_PASSWORD_/$st_password/g" > /etc/wpa_supplicant/wpa_supplicant.conf
+    else
+	cat etc/wpa_supplicant/wpa_supplicant-wpa.conf | \
+	    sed "s/_ST_SSID_/$st_ssid/g" | \
+	    sed "s/_ST_PASSWORD_/$st_password/g" > /etc/wpa_supplicant/wpa_supplicant.conf
+    fi
+    wpa_cli reconfigure
+    wait_for_network
+}
+
+function packages {
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update && apt-get install -q -y hostapd dnsmasq iptables-persistent
+}
+
+function install_device {
+    cp etc/network/interfaces /etc/network/interfaces
+    cp etc/udev/rules.d/90-wireless.rules /etc/udev/rules.d/90-wireless.rules
+    /sbin/iw phy phy0 interface add uap0 type __ap
+}
+
+function copy_ap_files {
+    cp etc/default/hostapd /etc/default/hostapd
+    cp etc/dnsmasq.conf /etc/dnsmasq.conf
+    cat etc/hostapd/hostapd.conf | \
+	sed "s/_AP_SSID_/$ap_ssid/g" | \
+	sed "s/_AP_PASSWORD_/$ap_password/g" > /etc/hostapd/hostapd.conf
+}
+
+function bridge {
+    if [ "$ap_bridge" = "yes" ]; then
+	echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
+	echo 1 > /proc/sys/net/ipv4/ip_forward
+	iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+	iptables -A FORWARD -i wlan0 -o uap0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+	iptables -A FORWARD -i uap0 -o wlan0 -j ACCEPT
+	iptables-save > /etc/iptables/rules.v4
+    fi
+}
+
+function restart_services {
+    systemctl restart dnsmasq
+    systemctl restart hostapd
+}
+
+install_device && \
+    enable_station && \
+    packages && \
+    copy_ap_files && \
+    bridge && \
+    restart_services

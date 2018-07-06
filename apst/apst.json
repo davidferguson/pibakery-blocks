@@ -1,0 +1,45 @@
+{
+  "name": "apst",
+  "text": "Setup Access Point+Station\\nAP SSID: %1\\nAP Pass: %2\\nBridge AP to ST?: %3\\nST SSID: %4\\nST Pass: %5\\nST Type: %6",
+  "script": "self-installer.sh",
+  "args": [
+    {
+      "type": "text",
+      "default": "ap-ssid",
+      "maxLength":0
+    },
+    {
+      "type": "text",
+      "default": "ap-password",
+      "maxLength":0
+    },
+    {
+      "type": "menu",
+      "options": [ "yes", "no" ]
+    },
+    {
+      "type": "text",
+      "default": "st-ssid",
+      "maxLength":0
+    },
+    {
+      "type": "text",
+      "default": "st-password",
+      "maxLength":0
+    },
+    {
+      "type": "menu",
+      "options": ["WPA/WPA2", "WEP", "Open (no password)"]
+    }
+  ],
+  "network": false,
+  "continue": true,
+  "type": "network",
+  "category":"network",
+  "supportedOperatingSystems": [
+    "raspbian-pibakery.img",
+    "raspbian-lite-pibakery.img"
+  ],
+  "shortDescription":"Set up Access Point + Station mode",
+  "longDescription":"This block allows you to enter a WiFi network name and password, and then your Raspberry Pi will automatically connect to that network when it is first switched on.  It also creates a WiFi hotspot (access point) that (optionally) bridges traffic to the client interface."
+}
