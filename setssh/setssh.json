@@ -1,0 +1,21 @@
+{
+	"name": "setssh",
+	"text": "%1 SSH server",
+	"script": "setssh.sh",
+	"args": [
+		{
+			"type": "menu",
+			"options": ["Enable", "Disable"]
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Enable or disable ssh server to allow for SSH login",
+	"longDescription":"By default Raspbian does not allow for SSH access and this must be enabled for ssh logins to work."
+}
