@@ -1,0 +1,18 @@
+{
+	"name": "watchdog",
+	"text": "%1 watchdog service",
+	"script": "watchdog.sh",
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category": "software",
+	"shortDescription":"install and enable or disable watchdog service",
+	"longDescription":"this block will install and enable or disbale the watchdog service",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+    "args": [
+        { "type": "menu", "options": ["Install and enable", "Disable"]}
+    ]
+}

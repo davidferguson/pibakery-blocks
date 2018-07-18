@@ -1,0 +1,22 @@
+{
+	"name": "staticipsetup",
+	"text": "Setup static IP address\\n interface %1\\n address %2\\n subnet %3\\n router %4\\n dns %5",
+	"script": "staticipsetup.sh",
+	"network": true,
+	"continue": true,
+	"type": "network",
+	"category": "network",
+	"shortDescription":"setup static IP address in /etc/dhcpd.conf",
+	"longDescription":"this block will set a static IP address in /etc/dhcpd.conf",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+    "args": [
+        { "type": "menu", "options": ["eth0", "wlan0", "wlan1"]},
+        { "type": "text", "default": "192.168.0.100", "maxLength": 15},
+        { "type": "menu", "options": ["255.255.255.0", "255.255.0.0", "255.0.0.0"]},
+        { "type": "text", "default": "192.168.0.1", "maxLength": 15},
+        { "type": "text", "default": "192.168.0.1", "maxLength": 0}
+    ]
+}
