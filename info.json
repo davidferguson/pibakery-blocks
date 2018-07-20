@@ -27,6 +27,7 @@
     "runpython",
     "deletefile",
     "reboot",
-    "shutdown"
+    "shutdown",
+    "changeinterfacemode"
   ]
 }
