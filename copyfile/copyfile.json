@@ -1,0 +1,25 @@
+{
+  "name": "copyfile",
+  "text": "CopyFile\\nCopy or move things around on the local filesystem\\nCopy %1\\nto %2\\nOperation type: %3",
+  "script": "copyfile.py",
+  "network": false,
+  "continue": true,
+  "type": "other",
+  "category": "other",
+  "shortDescription": "Copy or move things around on the local filesystem.",
+  "longDescription": "Copy or move files or directories around on the local filesystem.  The first argument is the source, the second is the destination. Copying a file creates or overwrites the destination, while leaving the source file as-is.  If you elect to move a file, then the destination will still be created or overwritten, but the original will no longer exist. Source and dest may be directory names as well, and will operate with the same symantics as the Unix cp/mv commands.",
+  "args": [
+    {
+      "type": "text",
+      "default": "/home/pi/.bashrc"
+    },
+    {
+      "type": "text",
+      "default": "/home/pi/.bashrc.orig"
+    },
+    {
+      "type": "menu",
+      "options": ["Copy", "Move"]
+    }
+  ]
+}

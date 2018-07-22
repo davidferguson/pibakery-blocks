@@ -1,0 +1,25 @@
+{
+  "name": "editkernelcmdline",
+  "text": "Edit the Kernel Command Line\\nKeyword: %1\\nValue: %2\\nAllow multiple occurrences: %3",
+  "script": "editkernelcmdline.py",
+  "network": false,
+  "continue": true,
+  "type": "setting",
+  "category": "setting",
+  "shortDescription": "Add to or edit the /boot/cmdline.txt file.",
+  "longDescription": "Ensures that the given keyword appears on the kernel command line (/boot/cmdline.txt). If a value is provided, then the keyword will be added as a 'keyword=value' pair. If only a keyword is given, it will be added to the command line as is. If 'Allow multiple occurrences' is set to True, the new edits will be appended to the end of the existing command line and everything else will remain the same.  If False, the new edit will still be appended, but all other occurrences of the keyword, whether they have values or not, will be removed.",
+  "args": [
+    {
+      "type": "text",
+      "default": "console"
+    },
+    {
+      "type": "text",
+      "default": "serial0,115200"
+    },
+    {
+      "type": "menu",
+      "options": ["Yes", "No"]
+    }
+  ]
+}
