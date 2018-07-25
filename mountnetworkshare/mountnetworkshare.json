@@ -1,0 +1,21 @@
+{
+	"name": "mountnetworkshare",
+	"text": "Mount network share\\n%1\\nto\\n%2",
+	"script": "mountnetworkshare.sh",
+	"args": [
+		{
+			"type": "text",
+			"default": "server:/share"
+		},
+		{
+			"type": "text",
+			"default": "/mount/share"
+		}
+	],
+	"network": true,
+	"continue": true,
+	"type": "network",
+	"category":"network",
+	"shortDescription":"Mount a network share",
+	"longDescription":"Mount a network share"
+}
