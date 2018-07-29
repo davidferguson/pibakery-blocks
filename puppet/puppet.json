@@ -1,0 +1,23 @@
+{
+	"name": "puppet",
+	"text": "Puppet Master FQDN: %1\\nRun Agent Test: %2",
+	"script": "puppet.sh",
+	"args": [
+		{
+			"type": "text",
+			"default": "Puppet Master FQDN",
+			"maxLength": 0
+		},
+		{
+			"type": "menu",
+			"options": ["Yes","No"]
+		}
+	],
+	"network": true,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"shortDescription":"Installs Puppet agent to Raspberry Pi",
+	"longDescription":"Installs Puppet Agent and attachs to Puppet Master. For support or feature requests e-mail praetor@sdf.org or reach me on Twitter @gwesfisher."
+}
+
