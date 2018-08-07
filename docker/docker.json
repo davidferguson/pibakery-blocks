@@ -1,0 +1,12 @@
+{
+	"name": "docker",
+	"text": "Install Docker",
+	"script": "docker.sh",
+	"args": [],
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category":"software",
+	"shortDescription":"Install Docker on your RaspberryPi. This block requires an internet connection to work.",
+	"longDescription":"Install Docker on your RaspberryPi. As this block will download the file from the internet, an internet connection is required to use this block."
+}
