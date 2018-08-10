@@ -1,0 +1,22 @@
+{
+	"name": "pipinstall",
+	"text": "Install: %1 using %2\\nCan take a little while to install pip/pip3\\nRequires internet connection",
+	"script": "pipinstall.sh",
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category":"software",
+	"shortDescription":"Pip install the listed package",
+	"longDescription":"This block allows you to install the listed package using pip or pip3. At first execution, it will install python-pip or python3-pip, it may take some time to complete. Requires internet connection.",
+	"args": [
+		{
+			"type": "text",
+			"default": "package-name",
+			"maxLength": 0
+		},
+		{
+			"type": "menu",
+			"options": ["pip", "pip3"]
+		}
+	]
+}
