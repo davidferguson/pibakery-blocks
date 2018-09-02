@@ -1,0 +1,18 @@
+{
+	"name": "changeSSHport",
+	"text": "Change SSH port to %1",
+	"script": "changeSSHport.sh",
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"shortDescription":"Change the SSH port",
+	"longDescription":"This block allows you to change the default SSH port (22) to the one selected.",
+	"args": [
+		{
+			"type": "number",
+			"default": "8080",
+			"maxLength": 5
+		}
+	]
+}
