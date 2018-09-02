@@ -16,6 +16,7 @@
     "otgremove",
     "bootbehaviour",
     "changepass",
+    "adduserpass",
     "sethostname",
     "newcronjob",
     "uartconsole",
