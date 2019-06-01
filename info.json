@@ -28,5 +28,10 @@
     "deletefile",
     "reboot",
     "shutdown"
+    "updateupgrade"
+    "enablessh"
+    "memsplit"
+    "retropiesetup"
+    "waitfornetwork"
   ]
 }
