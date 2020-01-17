@@ -1,0 +1,36 @@
+{
+	"name": "eduroamwifisetup",
+	"text": "Setup Eduroam WiFi\\nUser Identity: %1\\nPassword: %2\\nCountry (ISO 3166):%3\\nWait for Network:%4",
+	"script": "eduroamWifiConnect.py",
+	"args": [
+		{
+			"type": "text",
+			"default": "user-identity",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "password",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "GB",
+			"maxLength":0
+		},
+		{
+			"type": "menu",
+			"options": ["Yes", "No"]
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "network",
+	"category":"network",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Automatically connect to a eduroam WiFi network.",
+	"longDescription":"This block allows you to enter a eduroam username and password, and then your Raspberry Pi will automatically connect to that network when it is first switched on."
+}
