@@ -1,0 +1,37 @@
+{
+	"name": "changekeyboardlayout",
+	"text": "Change Keyboard Layout\\nModel: %1\\nLayout: %2\\nVariant: %3\\nOptions: %4",
+	"script": "changeKeyboardLayout.py",
+	"args": [
+		{
+			"type": "text",
+			"default": "pc105",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "us",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "",
+			"maxLength":0
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Setup the desired keyboard layout.",
+	"longDescription":"This block allows you to change the keyboard layout. For more informations about the variables check: https://manpages.debian.org/buster/keyboard-configuration/keyboard.5.en.html"
+}
