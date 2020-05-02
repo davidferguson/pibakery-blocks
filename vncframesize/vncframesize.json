@@ -1,0 +1,16 @@
+{
+	"name": "vncframesize",
+	"text": "VNC Framesize",
+	"script": "vncframesize.sh",
+	"args": [],
+	"network": false,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Change frame size to 1280x720.",
+	"longDescription":"This block simpley un-comments the framesize lines in /boot/config.txt which gives 1280x720 instead of the default 640x480 which can be better for headless VNC sessions."
+}
