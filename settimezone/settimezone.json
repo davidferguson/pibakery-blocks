@@ -1,0 +1,22 @@
+{
+    "name": "settimezone",
+    "text": "Set timezone to %1",
+    "script": "settimezone.sh",
+	"args": [
+        {
+            "type": "text",
+            "default": "Europe/Berlin",
+            "maxLength":0
+        }
+    ],
+    "network": false,
+    "continue": true,
+    "type": "setting",
+    "category": "setting",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+    "shortDescription":"Set the timezone of your Raspberry Pi.",
+    "longDescription":"This sets the timezone of your Raspberry Pi in /etc/timezone and /etc/localtime."
+}
