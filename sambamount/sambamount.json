@@ -15,17 +15,17 @@
 		},
 		{
 			"type": "text",
-			"default": "pi",
+			"default": "",
 			"maxLength":0
 		},
 		{
 			"type": "text",
-			"default": "School198",
+			"default": "",
 			"maxLength":0
 		},
 		{
 			"type": "text",
-			"default": "SCHOOL.LOCAL",
+			"default": "",
 			"maxLength":0
 		},
 		{
